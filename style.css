@@ -1,0 +1,253 @@
+/* Estilos originais (adicione os seus aqui, se houver) */
+.grade-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-horario {
+    background-color: #ffffff;
+    border: 2px solid #c8e6c9;
+    border-left: 8px solid #2e7d32;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.card-horario:hover {
+    transform: translateY(-5px);
+}
+
+.card-horario h3 {
+    font-size: 1.4em;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.card-horario p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+/* Novos estilos adicionados */
+.secao {
+    border-top: 2px solid #ccc;
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.titulo-secao {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2d3e2f;
+}
+
+.conteudo-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.conteudo-imagens img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.lista-horarios span {
+    font-weight: bold;
+    color: #1b5e20;
+    display: inline-block;
+    width: 120px;
+}
+
+.lista-horarios li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #e8f5e9;
+    border-radius: 6px;
+}
+
+.lista-eventos li {
+    background-color: #fff3e0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.destaque {
+    background-color: #eef7f0;
+}
+
+.botao-destaque {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-destaque:hover {
+    background-color: #1b5e20;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #2d3e2f;
+    line-height: 1.6;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.site-header {
+background: linear-gradient(90deg,rgba(74, 110, 29, 1) 0%, rgba(40, 148, 126, 1) 55%, rgba(29, 110, 64, 1) 100%);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo img {
+    height: 50px;  /* Defina a altura do logo */
+    width: auto;
+}
+
+/* Navegação */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;  /* Cor branca para os links */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito hover no menu */
+.main-nav a:hover {
+    color: #c8e6c9;  /* Cor mais clara ao passar o mouse */
+    text-decoration: underline;  /* Sublinha o link ao passar o mouse */
+}
+
+/* Hero Section */
+.hero {
+    background: url('nova.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagens da Comunidade */
+.community-images {
+    padding: 50px 20px;
+    background-color: #f0f9f3;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 32%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.site-footer {
+    background-color: #2d3e2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .main-nav a {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

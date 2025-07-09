@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 80px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="container">
+      <nav class="main-nav">
+        <ul>
+         <li><a href="index.html">Home</a></li>
+                    <li><a href="componentes.html">Componentes Utilizados</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="construcao.html">Construção Projeto</a></li>
+                     <li><a href="projeto.html">Sobre o Projeto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="form-container">
+    <form action="https://formspree.io/f/xwpojywz" method="POST">
+      <h1>Contato</h1>
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" id="telefone" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea name="mensagem" id="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Desenvolvido por Miguel Schlindwein - 2025. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
+</body>
+  </html>
